@@ -1,0 +1,140 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #C0CBDD;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #342500;
+}
+
+a{
+    all: unset;
+    cursor: pointer;
+}
+
+a:hover{
+        transform: scale(1.1);
+        opacity: 0.5;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    background-color: #B7CBEC;
+}
+
+.busca-rapida{
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Icon{
+    width: 60px;
+}
+
+.logo{
+    width: 60px;
+}
+
+
+/* pagina */
+main{
+   
+    margin-left: 17%;
+    margin-right: 17%;
+    height: 100vh;
+}
+
+
+
+/* imagens */
+
+.Imagens{
+    height: 100%;
+}
+
+.fotos{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+.foto{
+    border-radius: 2%;
+}
+
+.fotoCidade{
+    width: 900px;
+    height: 600px;
+    border-radius: 2%;
+}
+
+/* Avaliações */
+
+.Avaliações{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* estrelas */
+.avaliacao{
+display:flex;
+justify-content: flex-start;
+}
+
+.star-icon{
+list-style-type: none;;
+cursor: pointer;
+color: #FFE500;
+font-size: 50px;
+}
+
+.star-icon::before{
+content: "\2605"; 
+}
+
+.star-icon.ativo ~ .star-icon::before{ 
+    content: "\2606"; 
+}
+
+.avaliacao:hover .star-icon::before{ 
+    content: "\2605"; 
+}
+
+.star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+}
+
+
+input{
+    
+    background-color: #fff;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+/* usuarios */
+.avaliaçõesUsuarios{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.perfis{
+    width: 400px;
+    display: flex;
+    flex-flow: column;
+}
+
+.perfil{
+    display: flex;
+}

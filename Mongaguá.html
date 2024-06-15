@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongaguá</title>
+    <link rel="stylesheet" href="styles/Monguaguá.css">
+</head>
+<body>
+    <header>
+        <a href="PagInicial.html"><img src="img/Logo.jpg" alt="" class="logo"></a> <!-- Logo Anima -->
+        <div class="busca-rapida">
+            <a href="#sobre">
+                <p>Sobre</p>
+            </a>
+            <a href="#Pontos">
+                <p>Pontos</p>
+            </a>
+            <a href=""><img src="img/Icon-Perfil.png" alt="" class="Icon"></a>
+           <!-- icon de perfil -->
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h1>Mongaguá</h1>
+            <img src="img/Mongaguá.jpg" alt="" class="fotoCidade">
+        </div>
+
+        <div id="sobre">
+            <h1>Sobre a cidade</h1>
+            <p>Descubra as maravilhas de Mongaguá, um destino encantador no litoral sul de São Paulo! Venha desfrutar de praias deslumbrantes. 
+                Além das belas paisagens litorâneas, você pode explorar o Parque Turístico Ecológico Monte Alegre, ideal para caminhadas e contemplação da fauna e flora locais.
+                Em Mongaguá, a hospitalidade caiçara se faz presente em cada cantinho da cidade, e você poderá desfrutar de uma deliciosa gastronomia à beira-mar, experimentando frutos do mar frescos e outras especialidades locais.
+                Venha descobrir todo o charme e tranquilidade que Mongaguá tem a oferecer. Seja bem-vindo e aproveite momentos inesquecíveis neste pedacinho especial do litoral paulista!
+            </p>
+            <img src="" alt="">
+        </div>
+
+        <div id="Pontos">
+            <h1>Pontos Turísticos</h1>
+            <ul>
+                <li>
+                    <h2>Plataforma</h2>
+                    <p>
+                        A Plataforma de Pesca de Agenor de Campos é um dos pontos turísticos mais famosos de Mongaguá, no litoral sul de São Paulo. Estendendo-se sobre o mar, a plataforma é um local popular tanto para pescadores quanto para visitantes em busca de belas paisagens e uma experiência única à beira-mar.
+                        Com sua estrutura que avança sobre as águas, a Plataforma de Pesca oferece uma vista deslumbrante do oceano, proporcionando um cenário perfeito para apreciar o pôr do sol e a imensidão do mar. Além disso, é um ótimo local para observar a pesca artesanal e desfrutar da brisa marinha.
+                    </p>
+                    
+                    <h2>Endereço</h2>
+                    <p>Balneário Itaguaí, Mongaguá-SP</p>
+
+                    <div class="Imagens">
+                        <h2>Imagens</h2>
+                        <div class="fotos">
+                            <img src="img/Plataforma1.jpg" alt="" class="foto">
+                            <P></P>
+                            <img src="img/Plataforma2.jpg" alt="" class="foto">
+                        </div>
+                    </div>
+
+                    <h2>Detalhes</h2>
+                    <p>
+                        Acessibilidade
+                        Entrada com acessibilidade para pessoas em cadeira de rodas.
+                        <br>
+                        Estacionamento com acessibilidade para pessoas em cadeira de rodas.
+                    </p>
+
+                    <h2>Entrada:</h2>
+                    <ul>
+                        <li>R$8,00 inteira </li>
+                        <li>R$4,00 meia </li>
+                        <li>Crianças a cima de 7 anos pagam!!</li>
+                        <li>Favor levar a carteirinha de estudante.</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="Avaliações">
+            <h1>Avaliações</h1>
+            <input type="text" placeholder="Digite sua avliação aqui" >
+
+            <div class="avaliacao">
+                <li class="star-icon ativo" data-avaliacao="1"></li>
+                <li class="star-icon" data-avaliacao="2"></li>
+                <li class="star-icon" data-avaliacao="3"></li>
+                <li class="star-icon" data-avaliacao="4"></li>
+                <li class="star-icon" data-avaliacao="5"></li>
+            </div>
+        </div>
+
+        <div class="avaliaçõesUsuarios">
+            <div class="perfis">
+                <section class="perfil">
+                    <img src="img/Icon-Perfil.png" alt="" class="Icon">
+                    <h2>Usuario</h2>
+                </section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum nisi, id omnis aliquam vitae magni qui autem quae molestiae dolor repudiandae non pariatur repellendus.</p>
+            </div>
+            <div class="perfis">
+                <section class="perfil">
+                    <img src="img/Icon-Perfil.png" alt="" class="Icon">
+                    <h2>Usuario</h2>
+                </section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatum nisi, id omnis aliquam vitae magni qui autem quae molestiae dolor repudiandae non pariatur repellendus.</p>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        var stars = document.querySelectorAll('.star-icon');
+    document.addEventListener('click', function(e){
+        var classStar = e.target.classList;
+        if(!classStar.contains('ativo')){
+        stars.forEach(function(star){
+        star.classList.remove('ativo');
+        });
+        classStar.add('ativo');
+    }
+});
+    </script>
+</body>
+</html>
