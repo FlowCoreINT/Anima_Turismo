@@ -62,15 +62,9 @@ main{
     align-items: center;
 }
 
-
-.foto{
-    border-radius: 2%;
-}
-
 .fotoCidade{
     width: 900px;
     height: 600px;
-    border-radius: 2%;
 }
 
 /* Avaliações */
@@ -82,7 +76,6 @@ main{
     align-items: center;
 }
 
-
 /* estrelas */
 .avaliacao{
 display:flex;
@@ -92,7 +85,7 @@ justify-content: flex-start;
 .star-icon{
 list-style-type: none;;
 cursor: pointer;
-color: #FFE500;
+color: #F5F0C9;
 font-size: 50px;
 }
 
@@ -115,10 +108,13 @@ content: "\2605";
 
 input{
     
-    background-color: #fff;
-    width: 200px;
+    background-color: #F5F0C9;
+    width: 300px;
     height: 30px;
-    border-radius: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    border: #F5F0C9;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 /* usuarios */
@@ -137,4 +133,16 @@ input{
 
 .perfil{
     display: flex;
+}
+
+#Titulo{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+
+}
+
+#Titulo img{
+    border: 10px solid #F5F0C9;
 }
