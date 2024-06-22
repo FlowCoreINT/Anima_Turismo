@@ -86,3 +86,46 @@ main{
     justify-content: flex-end;
     align-items: center;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .imgCidade{
+        width: 160px;
+        height: 160px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .nota{
+        width: 60px;
+    }
+
+    .estrela{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .imgCidade{
+        width: 100px;
+        height: 100px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .nota{
+        width: 60px;
+    }
+
+    .estrela{
+        width: 15px;
+        height: 15px;
+    }
+}

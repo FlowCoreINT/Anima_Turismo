@@ -61,12 +61,12 @@ a{
 }
 
 .imagem{
-    width: 300px;
+    width: 350px;
 }
 
 .container{
     width: 100%;
-    max-width: 800px;
+    max-width: 100%;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -103,4 +103,102 @@ a{
 
 .card:hover{
     flex: 3;
+}
+
+
+
+/* cidade celular */
+.CityCelular{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    
+
+    .CityPc{
+        display: none;
+    }
+    
+
+    .PaginaInicial{
+        height: 400vh;
+    }
+
+    .CityCelular{
+        height: 100%;
+        display:flex;
+        flex-flow: column;
+    }
+
+    .imgCidade{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .duas{
+        display: flex;
+        justify-content: space-around
+    
+    }
+    
+    .ultima{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    
+    .PaginaInicial{
+        height: 320vh;
+    }
+    
+    .imgCidade{
+        width: 200px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .PaginaInicial{
+        height: 110vh;
+    }
+    
+    .imgCidade{
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 10px ;
+    }
+
+    .tituloDica{
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .imgCidade{
+        width: 60px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+
+    .PaginaInicial{
+        height: 80vh;
+    }
 }

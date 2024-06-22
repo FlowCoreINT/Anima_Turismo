@@ -6,6 +6,11 @@ body{
     color: #342500;
 }
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 a{
     all: unset;
     cursor: pointer;
@@ -88,7 +93,7 @@ justify-content: flex-start;
 }
 
 .star-icon{
-list-style-type: none;;
+list-style-type: none;
 cursor: pointer;
 color: #F5F0C9;
 font-size: 50px;
@@ -128,6 +133,7 @@ input{
     display: flex;
     flex-flow: column;
     align-items: center;
+  
 }
 
 .perfis{
@@ -150,4 +156,21 @@ input{
 
 #Titulo img{
     border: 10px solid #F5F0C9;
+}
+
+
+@media screen and (max-width: 500px) {
+    .fotoCidade{
+        width: 400px;
+        height: 200px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .perfis{
+        width: 300px;
+    }
+
 }
